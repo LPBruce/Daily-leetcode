@@ -14,10 +14,10 @@
 
 |No|题目|solution|难度|焦点 |
 | :--- | :--- | :--- | :--- | :--- |
-|59|[spiral-matrix-ii-螺旋矩阵2](https://leetcode-cn.com/problems/spiral-matrix-ii/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/59-spiral-matrix-ii-%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B52.md)|中等||
-|78|[subsets-子集](https://leetcode-cn.com/problems/subsets/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/78-subsets-%E5%AD%90%E9%9B%86.md)|中等||
-|83|[remove-duplicates-from-sorted-list-删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)|[Java]()|简单||
-|1603|[design-parking-system-设计停车系统](https://leetcode-cn.com/problems/design-parking-system/)|[Java]()|简单||
+|59|[spiral-matrix-ii-螺旋矩阵2](https://leetcode-cn.com/problems/spiral-matrix-ii/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/59-spiral-matrix-ii.md)|中等||
+|78|[subsets-子集](https://leetcode-cn.com/problems/subsets/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/78-subsets.md)|中等||
+|83|[remove-duplicates-from-sorted-list-删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/83-remove-duplicates-from-sorted-list.md)|简单||
+|1603|[design-parking-system-设计停车系统](https://leetcode-cn.com/problems/design-parking-system/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/1603-design-parking-system.md)|简单||
 
 
 
