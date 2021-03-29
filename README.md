@@ -2,6 +2,7 @@
 
 ### 目录内容
 👉algorithm——算法知识精粹<br>
+👉keypoint——编程语言精粹<br>
 👉solution——leetcode题解
 
 ### 寄语
@@ -19,6 +20,7 @@
 |78|[subsets-子集](https://leetcode-cn.com/problems/subsets/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/78-subsets.md)|中等||
 |83|[remove-duplicates-from-sorted-list-删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/83-remove-duplicates-from-sorted-list.md)|简单||
 |1603|[design-parking-system-设计停车系统](https://leetcode-cn.com/problems/design-parking-system/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/1603-design-parking-system.md)|简单||
+
 
 
 
