@@ -19,6 +19,10 @@
 |59|[spiral-matrix-ii-螺旋矩阵2](https://leetcode-cn.com/problems/spiral-matrix-ii/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/59-spiral-matrix-ii.md)|中等||
 |78|[subsets-子集](https://leetcode-cn.com/problems/subsets/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/78-subsets.md)|中等||
 |83|[remove-duplicates-from-sorted-list-删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/83-remove-duplicates-from-sorted-list.md)|简单||
+|1010|[pairs-of-songs-with-total-durations-divisible-by-60-总持续时间可被 60 整除的歌曲](https://leetcode-cn.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/)|[Cpp]()|中等||
+|1233|[remove-sub-folders-from-the-filesystem-删除子文件夹](https://leetcode-cn.com/problems/remove-sub-folders-from-the-filesystem/)|[Java]()|中等||
+|1254|[number-of-closed-islands-统计封闭岛屿的数目](https://leetcode-cn.com/problems/number-of-closed-islands/)|[Java]()|中等||
+|1267|[count-servers-that-communicate-统计参与通信的服务器](https://leetcode-cn.com/problems/count-servers-that-communicate/)|[Java]()|中等||
 |1603|[design-parking-system-设计停车系统](https://leetcode-cn.com/problems/design-parking-system/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/1603-design-parking-system.md)|简单||
 
 
