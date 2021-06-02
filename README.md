@@ -26,5 +26,8 @@
 |1603|[design-parking-system-设计停车系统](https://leetcode-cn.com/problems/design-parking-system/)|[Java](https://github.com/LPBruce/Daily-leetcode/blob/main/solutions/1603-design-parking-system.md)|简单||
 
 
+### 语言精粹
++ [Java_String](https://github.com/LPBruce/Daily-leetcode/blob/main/languages/Java/String.md)
 
 
+### 算法精粹
