@@ -10,6 +10,11 @@ String str2 = new String("aaa")
 char a[] = {'H','e','l','l','0'};  // 字符数组转字符串
 String sChar = new String(a);
 String sChar = new String(a,1,4);  // String(char[] value,int offset,int count)
+
+
+// 将此字符串转换为一个新的字符数组。
+// char[] toCharArray()
+char[] a = Str.toCharArray()
 ```
 ### 2. String与int转换
 ```java
@@ -135,19 +140,126 @@ str1.equalsIgnoreCase(str2)
 // 如果 str 位于 otherstr 之后，比较结果为一个正整数；
 // 如果两个字符串相等，则结果为 0。
 str1.compareTo(str2)
+
+// compareToIgnoreCase()  用于按字典顺序比较两个字符串，不考虑大小写
+str1.compareToIgnoreCase(str2) 
 ```
 
 ### 10. Java字符串查找
 字符串查找分为两种形式：一种是在字符串中获取匹配字符（串）的索引值，另一种是在字符串中获取指定索引位置的字符。
 
+**根据字符查找**
+String 类的 indexOf() 方法和 lastlndexOf() 方法用于在字符串中获取匹配字符（串）的索引值。
+```java
+// indexOf() 方法
+// indexOf() 方法用于返回字符（串）在指定字符串中首次出现的索引位置，如果能找到，则返回索引值，否则返回 -1
+// 其中，str 表示指定字符串；value 表示待查找的字符（串）；fromIndex 表示查找时的起始索引，如果不指定 fromIndex，则默认从指定字符串中的开始位置（即 fromIndex 默认为 0）开始查找。
+str.indexOf(value)
+str.indexOf(value,int fromIndex)  // 注意 value 也可以是字符串
 
+// lastlndexOf() 方法
+// lastIndexOf() 方法用于返回字符（串）在指定字符串中最后一次出现的索引位置，如果能找到则返回索引值，否则返回 -1。
+// lastIndexOf() 方法的查找策略是从右往左查找，如果不指定起始索引，则默认从字符串的末尾开始查找。
+str.lastIndexOf(value)
+str.lastlndexOf(value, int fromIndex)
+```
+
+
+**根据索引查找**
+String 类的 charAt() 方法可以在字符串内根据指定的索引查找字符
+```java
+// 字符串本质上是字符数组，因此它也有索引，索引从零开始。
+str1.charAt(索引值)
+```
+
+### 11. Java StringBuffer类详解
+StringBuffer 类是可变字符串类，创建 StringBuffer 类的对象后可以随意修改字符串的内容。每个 StringBuffer 类的对象都能够存储指定容量的字符串，如果字符串的长度超过了 StringBuffer 类对象的容量，则该对象的容量会自动扩大。
+> String 是 Java 中基础且重要的类，被声明为 final class，是不可变字符串。因为它的不可变性，所以拼接字符串时候会产生很多无用的中间对象，如果频繁的进行这样的操作对性能有所影响。
+> StringBuffer 就是为了解决大量拼接字符串时产生很多中间对象问题而提供的一个类。它提供了 append 和 add 方法，可以将字符串添加到已有序列的末尾或指定位置，它的本质是一个线程安全的可修改的字符序列。
+> 在很多情况下我们的字符串拼接操作不需要线程安全，所以 StringBuilder 登场了。StringBuilder 是 JDK1.5 发布的，它和 StringBuffer 本质上没什么区别，就是去掉了保证线程安全的那部分，减少了开销。
+
+```java
+// 使用 StringBuffer 类的构造函数
+// 定义一个空的字符串缓冲区，含有16个字符的容量
+StringBuffer str1 = new StringBuffer();
+// 定义一个含有10个字符容量的字符串缓冲区
+StringBuffer str2 = new StringBuffer(10);
+// 定义一个含有(16+4)的字符串缓冲区，"青春无悔"为4个字符
+StringBuffer str3 = new StringBuffer("青春无悔");
+// capacity()方法返回字符串的容量大小
+str1.capacity()
+
+// StringBuffer转字符串
+StringBuffer str1 = new StringBuffer();
+String str2 = new String(str1)
+String str2 = str1.toString()
+
+// 追加字符串
+// StringBuffer 类的 append() 方法用于向原有 StringBuffer 对象中追加字符串。追加内容到当前 StringBuffer 对象的末尾
+// StringBuffer对象.append(String str)
+str1.append("aaaa")
+
+// 替换字符
+// StringBuffer 类的 setCharAt() 方法用于在字符串的指定索引位置替换一个字符。
+// StringBuffer对象.setCharAt(int index, char ch);
+str1.setCharAt(1,'E');
+
+
+// 反转字符串
+// StringBuffer 类中的 reverse() 方法用于将字符串序列用其反转的形式取代。
+// StringBuffer 对象.reverse();
+str1.reverse();
+
+// 删除字符串
+// deleteCharAt() 方法
+// deleteCharAt() 方法用于移除序列中指定位置的字符，
+// StringBuffer 对象.deleteCharAt(int index);
+sb.deleteCharAt(2);
+// delete() 方法
+// delete() 方法用于移除序列中子字符串的字符
+// StringBuffer 对象.delete(int start,int end);
+// start 表示要删除字符的起始索引值（包括索引值所对应的字符），end 表示要删除字符串的结束索引值（不包括索引值所对应的字符）。该方法的作用是删除指定区域以内的所有字符
+// 左闭右关
+StringBuffer sb = new StringBuffer("hello jack");
+sb.delete(2,5);
+System.out.println(sb);    // 输出：he jack
+
+```
+
+### 12. Java 正则
+matches() 方法用于检测字符串是否匹配给定的正则表达式。
+```java
+// public boolean matches(String regex)
+// 在字符串匹配给定的正则表达式时，返回 true。
+String Str = new String("www.runoob.com");
+boolean aa = Str.matches("(.*)runoob(.*)");
+// 调用此方法的 str.matches(regex) 形式与以下表达式产生的结果完全相同：
+Pattern.matches(regex, str)
+
+
+```
+
+
+
+```java
+```
 
 ### 1X. 其他重要函数
 ```java
 //数组排序 boolean startsWith(String prefix) 测试此字符串是否以指定的前缀开始。
 str.startsWith("aaa")
-	
+// 测试此字符串从指定索引开始的子字符串是否以指定前缀开始。
+// boolean startsWith(String prefix, int toffset)
+str.startsWith("aaa", 1)
+// boolean endsWith(String suffix)测试此字符串是否以指定的后缀结束。
+str.endWith()
 
+// 判断是否包含指定的字符系列。 contains(CharSequence chars)
+boolean a = myStr.contains("o")
+
+// 判断字符串是否为空。isEmpty()
+myStr1.isEmpty()
 ```
 
-
+```java
+```
