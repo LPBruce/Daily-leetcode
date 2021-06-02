@@ -29,7 +29,6 @@ String s = "" + i;
 // 通用
 int a = Integer.parseInt(str)
 String s = Integer.toString(a)
-
 ```
 ### 3. Java字符串拼接（连接)
 
@@ -223,7 +222,6 @@ sb.deleteCharAt(2);
 StringBuffer sb = new StringBuffer("hello jack");
 sb.delete(2,5);
 System.out.println(sb);    // 输出：he jack
-
 ```
 
 ### 12. Java 正则
@@ -235,13 +233,6 @@ String Str = new String("www.runoob.com");
 boolean aa = Str.matches("(.*)runoob(.*)");
 // 调用此方法的 str.matches(regex) 形式与以下表达式产生的结果完全相同：
 Pattern.matches(regex, str)
-
-
-```
-
-
-
-```java
 ```
 
 ### 1X. 其他重要函数
@@ -259,7 +250,4 @@ boolean a = myStr.contains("o")
 
 // 判断字符串是否为空。isEmpty()
 myStr1.isEmpty()
-```
-
-```java
 ```
