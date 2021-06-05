@@ -29,6 +29,7 @@
 ### 语言精粹
 + [Java_String](https://github.com/LPBruce/Daily-leetcode/blob/main/languages/Java/String.md)
 + [Java_Collection](https://github.com/LPBruce/Daily-leetcode/blob/main/languages/Java/Collection.md)
++ [Java_Map](https://github.com/LPBruce/Daily-leetcode/blob/main/languages/Java/Map.md)
 
 
 ### 算法精粹
