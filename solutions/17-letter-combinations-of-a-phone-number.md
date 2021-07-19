@@ -4,6 +4,7 @@
 
 
 ### 题解
+DFS，另外使用map来保存电话号码的数据，使用StringBuffer来拼接字符串
 
 ```java
 class Solution {
