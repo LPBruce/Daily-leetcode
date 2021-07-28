@@ -3,7 +3,8 @@
 ### 目录内容
 👉algorithm——算法知识精粹<br>
 👉languages——编程语言精粹<br>
-👉solution——leetcode题解
+👉solution——leetcode题解<br>
+👉project——代码练习总结
 
 ### 寄语
 ✈️Faster，Higher，Stronger!!<br>
@@ -38,3 +39,9 @@
 
 
 ### 算法精粹
+
+
+### 代码库
+|No|语言|内容|简介|
+| :--- | :--- | :--- | :--- |
+|1|Java|[CollectionUse](https://github.com/LPBruce/Daily-leetcode/blob/main/project/Java/JavaUse/src/CollectionUse.java)|Java collection应用集|
